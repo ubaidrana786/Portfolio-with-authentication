@@ -1,0 +1,26 @@
+.starting {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.starting h1 {
+  font-size: 5rem;
+}
+.backgroundImage{
+  background-image: url(../../Assests/home.jpg);
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+}
+.backgroundImage h1 {
+  padding-top: 1%;
+  color: white;
+  text-align: center;
+}
+.backgroundHeading4{
+padding-top: 35%;
+color: white;
+text-align: center;
+    
+}
+
