@@ -1,20 +1,24 @@
-const image = [
+import all from "../../Assests/all.jpg"
+import all2 from "../../Assests/all2.jpg"
+import all3 from "../../Assests/all3.jpg"
+const ImageGellery = [
     {
         id:1,
-        image: "../../Assests/about.png",
-
+        image: all,
+        catetogry:"all"
 
     },
     {
-        id:1,
-        image: "../../Assests/about.png",
-        
+        id:2,
+        image: all2,
+        catetogry:"web"
 
     },
     {
         id:3,
-        image: "../../Assests/about.png",
-        
+        image: all3,
+        catetogry:"marketing"
 
     }
 ]
+export default ImageGellery;

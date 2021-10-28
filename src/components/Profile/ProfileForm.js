@@ -37,7 +37,7 @@ const ProfileForm = () => {
   };
 
   return (
-    <form className={classes.form} onSubmit={submitHandler}>
+    <form  className={classes.form} onSubmit={submitHandler}>
       <div className={classes.control}>
         <label htmlFor='new-password'>New Password</label>
         <input type='password' id='new-password' minLength="7" ref={newPasswordInputRef} />
