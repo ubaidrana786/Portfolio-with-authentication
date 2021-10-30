@@ -40,7 +40,7 @@ const MainNavigation = () => {
       </nav> */}
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
   <div class="container">
-    <Link class="navbar-brand " to="/"><img src={logo} alt="" srcset="" /></Link>
+    <Link class="navbar-brand " to="/"><img src={logo} height="45px" alt="" srcset="" /></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -60,7 +60,7 @@ const MainNavigation = () => {
       </ul>
       <div class="d-flex">
         
-        <button class="btn bg-white" onClick={logoutHandler}>Logout</button>
+        <button class="btn btn-danger" onClick={logoutHandler}>Logout</button>
       </div>
     </div>
   </div>

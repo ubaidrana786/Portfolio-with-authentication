@@ -10,14 +10,30 @@ const ProfileForm = () => {
   const newPasswordInputRef = useRef();
   const EmailInputRef = useRef();
   const authCtx = useContext(AuthContext);
+ const DleteHandler= ()=>{
+  let a= window.confirm("please confirm dlete")
+  if (a==true) {
+     fetch("https://identitytoolkit.googleapis.com/v1/accounts:delete?key=AIzaSyBwT9kGPZ3VT4I4HF5rDFSeASM9QEczNUs",{
+    method: 'POST',
+    body: JSON.stringify({
+      idToken: authCtx.token,
+     
+    }),
+   }).then()
+  }
+  else{
+    console.log("dlete nahi kiya")
+  }
+  
 
+ }
   const submitHandler = (event) => {
     event.preventDefault();
 
     const enteredNewPassword = newPasswordInputRef.current.value;
     const enterednewemail = EmailInputRef.current.value
     // add validation
-    https://identitytoolkit.googleapis.com/v1/accounts:update?key=[API_KEY]
+   
     fetch('https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyBwT9kGPZ3VT4I4HF5rDFSeASM9QEczNUs', {
       method: 'POST',
       body: JSON.stringify({
@@ -46,6 +62,7 @@ const ProfileForm = () => {
       </div>
       <div className={classes.action}>
         <button>Change Password</button>
+        <button onClick={DleteHandler}>Dlete</button>
       </div>
     </form>
   );
